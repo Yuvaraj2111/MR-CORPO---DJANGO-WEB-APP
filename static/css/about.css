@@ -1,0 +1,25 @@
+ /* About-information */
+ div.info{
+    background-color: rgb(3, 40, 97);
+    color:white;
+    text-align: justify;
+    height: 280px;
+    line-height: 200%;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    
+  }
+  div.info h3{
+      color:#11994e;
+      text-align: left;
+  }
+  div.goal{
+    color:#11994e;
+    font-weight: bold;
+    margin-left:80px ;
+    margin-right: 80px;
+    text-align: justify;
+    font-size: 16px;
+  }

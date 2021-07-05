@@ -1,0 +1,94 @@
+{% load static%}
+.container a{
+	color: green;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+/*.back{
+    background: url(static/images/bg_1.jpg);
+	height: 150px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	background-position: center center;
+	background-size:cover;
+	position: relative;
+}
+*/
+.c{
+	width: 100%;
+	height: 100%;
+	background-color:#183661;
+	top:0;
+	left: 0;
+	opacity: .7;
+	z-index: 1;
+}
+.top a:hover{
+	color: green;
+}
+#mainnavbar .nav-link:hover{
+	color: green;
+}
+.s{
+	background-image: url('static/images/hero_1.jpg');
+	background-position:center;
+	background-size: cover;
+}
+.bg{
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+	background-color:#183661;
+	top:0;
+	left: 0;
+	opacity: .9;
+	z-index: 0;
+}
+
+.s h3{
+	color: green;
+}
+
+p{
+	line-height: 1.7;
+    font-weight: 300;
+    font-size: 1.1rem;
+	color: #7697c6;
+}
+
+.bg img{
+	margin-top: 80px;
+	margin-bottom: 20px;
+	width: 60px;
+	height:60px;
+}
+.top img{
+	width:15px;
+	height: 15px;
+}
+
+label {
+	color: gray;
+	display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.footer{
+	background-color:#183661;
+}
+.footer a{
+    color: green;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+
+.footer h4{
+    color: white;
+}

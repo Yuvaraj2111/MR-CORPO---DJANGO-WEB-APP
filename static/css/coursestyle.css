@@ -1,0 +1,134 @@
+
+.course-1-item .price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: #183661;
+    color: #fff;
+}
+
+
+.course-1-item .category {
+    background: #51be78;
+    padding: 15px;
+    color: white;
+}
+
+.course-1-item figure {
+    position: relative;
+}
+.container .enroll a{
+	color: white;
+	background: #51be78;
+	border-color: #51be78;
+}
+figure {
+    margin: 0 0 1rem;
+}
+.course-1-item .course-1-content {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.course-1-item .course-1-content h2 {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+
+.container a{
+	color: green;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.back{
+    background-image: url('images/bg_1.jpg');
+	height: 150px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	background-position: center center;
+	background-size:cover;
+	position: relative;
+}
+
+.c{
+	width: 100%;
+	height: 100%;
+	background-color:#183661;
+	top:0;
+	left: 0;
+	opacity: .7;
+	z-index: 1;
+}
+.top a:hover{
+	color: green;
+}
+#mainnavbar .nav-link:hover{
+	color: green;
+}
+.s{
+	background-image: url('images/hero_1.jpg');
+	background-position:center;
+	background-size: cover;
+}
+.bg{
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+	background-color:#183661;
+	top:0;
+	left: 0;
+	opacity: .9;
+	z-index: 0;
+}
+
+.s h3{
+	color: green;
+}
+
+p{
+	line-height: 1.7;
+    font-weight: 300;
+    font-size: 1.1rem;
+	color: #7697c6;
+}
+
+.bg img{
+	margin-top: 80px;
+	margin-bottom: 20px;
+	width: 60px;
+	height:60px;
+}
+.top img{
+	width:15px;
+	height: 15px;
+}
+
+label {
+	color: gray;
+	display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.footer{
+	background-color:#183661;
+}
+.footer a{
+    color: green;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+
+.footer h4{
+    color: white;
+}

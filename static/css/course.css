@@ -1,0 +1,63 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #11994e;
+    color:white;
+  }
+  div.price{
+      background-color:navy;
+      color: white;
+      text-align: center;
+      font-style: normal;
+  }
+  /* Tutors */
+
+  div.teach {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    color:black;
+    border:solid 1px #11994e;
+    height: 350px;
+    text-align: justify; 
+    font-weight: bold;
+  }
+  div.teach img{
+      border-radius: 50%!important;
+      border-style: none;
+      vertical-align: middle;
+      height: 100px;
+      width: 160px;
+      margin-left: 25%;
+    }
+    div.teach h4{
+      color:#11994e;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: inherit;
+    }
+    
+  
+
+    
+    
+  

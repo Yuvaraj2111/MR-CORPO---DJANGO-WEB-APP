@@ -1,0 +1,207 @@
+
+.logo img 
+{
+  padding: 30px 30px;
+ 
+}
+/*Menu_bar*/
+.list{
+  padding: 25px 30px;
+}
+
+
+ul.communication,ul.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+ 
+.title li{
+    float: left;
+}
+.title li a{
+    color:#11994e;
+}
+.base li {
+    float: left;   
+}
+li.menu a{
+    color:black;
+}
+
+ li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  li.highlight a{
+    color: #11994e;
+    font-weight: bold;
+  }
+  
+  .base li a:hover {
+    color:#11994e;
+  }
+
+ /*Image_container*/
+  .showSlide {  
+    display: none ;
+}  
+    .showSlide img {  
+        width: 100%; 
+        height: 100%;
+         filter: brightness(50%); 
+         
+
+    }  
+.slidercontainer {  
+     
+    position: relative;  
+    margin: auto;  
+}  
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 16px;  
+    margin-top: -22px;  
+    color: white;  
+    font-weight: bold;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+}  
+.right {  
+    right: 0;  
+    border-radius: 3px 0 0 3px;  
+}  
+    .left:hover, .right:hover {  
+        background-color: rgba(115, 115, 115, 0.8);  
+    }  
+.content {  
+    color:#ffffff;
+    left:30%;
+    margin-left: -100px;
+    margin-top:-50px;
+    font-size: 30px;  
+    padding: 8px 8px 50px 75px;  
+    position: absolute;  
+    top: 50%;  
+    width: 100%;  
+   
+} 
+
+  
+/* Fading animation */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 5s;  
+    animation-name: fade;  
+    animation-duration: 5s;  
+}  
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+.login button{
+    color:#11994e;
+    background-color: white;
+  
+    text-decoration: none;
+    font-family: inherit;
+    margin-left: 1150px;
+    padding:12px 20px;
+  
+}
+.register button{
+    color:white;
+    background-color: #11994e;
+    float: right;
+    font-family: inherit;
+    padding:12px 20px;
+    border-radius: 12px;
+    
+}
+.attach{
+    float: right ;
+}
+.heading
+{
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: #11994e;
+    text-decoration-thickness: auto;
+    text-align: center;
+}
+li.elements
+{
+    margin-right: 40px;
+    text-decoration: underline;
+    text-decoration-color: oldlace;
+    
+}
+/*Footer section*/
+footer{
+    background-color:rgb(3, 40, 97) ;
+    color: antiquewhite;
+    height: 400px;
+    position: relative;
+}
+footer div.footer-bottom{
+    color:wheat;
+    background-color:rgb(3, 40, 97);
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom:0px;
+    left:0px;
+    padding-top: 20px;
+}
+footer div.footer-content{
+    display: flex;
+    height: 350px;
+
+}
+footer div.footer-content.f-{
+    flex:1;
+    border: solid whitesmoke;
+    padding:25px;
+    color:white;
+
+}
+ul.course{
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    
+}
+ul.course li a:hover{
+    color:white;
+    text-decoration: underline white;
+}
+h3.heading{
+    color:white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-thickness: auto;
+    text-align: left;
+
+}
+ul.course li a{
+    color:#11994e;
+    text-align: left;
+}
+
+
+
+  
