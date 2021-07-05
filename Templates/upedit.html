@@ -1,0 +1,127 @@
+{% extends 'basic.html' %}
+{% block body %}
+{% load static %}
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>UPDATE Details</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li><i class="fas fa-map-marker-alt"></i>Chennai corporation , central , chennai: </li>
+                        <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+98 5312 1212</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:office@evolo.com">tngov@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                       <!-- Contact Form -->
+                       
+  
+                     
+                        
+                {% if scheme %}
+                                <form id="" action="{% url  'update' b.id 'scheme' %}" method="POST" >
+                    {% csrf_token %}
+                     <div class="form-group">
+                         <div class="row">
+                            <div class="cols">
+                                <a name="" id="" class="btn btn-primary" href="{% url 'govadd' %}" role="button">Add</a>
+                                <a name="" id="" class="btn btn-danger" href="{% url 'gedit' %}" role="button">Edit</a>
+                            </div>
+                         </div>
+                    </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="title" name="heading" value="{{ b.gschemeheading  }} " class="form-control-input" id="cemail" required>
+                            
+                        </div>
+                        <div class="form-group">
+                          <label for=""></label>
+                            <input type="text" placeholder="paragraph" name="paragraph" value="{{ b.gschemeparagraph }} " class="form-control-input" id="cemail" required>
+                        </div>
+                                                <div class="row" class="text-right">
+           
+                         <button type="submit" class="btn btn-warning col-lg-3 pull-right">UPDATE MESSAGE</button>
+
+                            
+                        </div>
+                      
+                 </form>
+                    <!-- end of contact form -->
+
+            </div> <!-- end of row -->
+
+            {% endif%}
+                          {% if ann %}
+                           <form id="" action="{% url  'update' b.id 'ann' %}" method="POST" >
+                    {% csrf_token %}
+                     <div class="form-group">
+                         <div class="row">
+                            <div class="cols">
+                                <a name="" id="" class="btn btn-primary" href="{% url 'govadd' %}" role="button">Add</a>
+                                <a name="" id="" class="btn btn-danger" href="{% url 'gedit' %}" role="button">Edit</a>
+                            </div>
+                         </div>
+                    </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="title" name="heading" value="{{ b.gannheading  }} " class="form-control-input" id="cemail" required>
+                            
+                        </div>
+                        <div class="form-group">
+                          <label for=""></label>
+                            <input type="text" placeholder="paragraph" name="paragraph" value="{{ b.gannparagraph }} " class="form-control-input" id="cemail" required>
+                        </div>
+                                                      <div class="row" class="text-right">
+           
+                         <button type="submit" class="btn btn-warning col-lg-3 pull-right">UPDATE MESSAGE</button>
+
+                            
+                        </div>
+                      
+                 </form>
+            {% endif%}
+
+                           {% if job %}
+                            <form id="" action="{% url  'update' b.id 'job' %}" method="POST" >
+                    {% csrf_token %}
+                     <div class="form-group">
+                         <div class="row">
+                            <div class="cols">
+                                <a name="" id="" class="btn btn-primary" href="{% url 'govadd' %}" role="button">Add</a>
+                                <a name="" id="" class="btn btn-danger" href="{% url 'gedit' %}" role="button">Edit</a>
+                            </div>
+                         </div>
+                    </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="title" name="heading" value="{{ b.gjobheading  }} " class="form-control-input" id="cemail" required>
+                            
+                        </div>
+                        <div class="form-group">
+                          <label for=""></label>
+                            <input type="text" placeholder="paragraph" name="paragraph" value="{{ b.gjobparagraph }} " class="form-control-input" id="cemail" required>
+                        </div>
+                                                     <div class="row" class="text-right">
+           
+                         <button type="submit" class="btn btn-warning col-lg-3 pull-right">UPDATE MESSAGE</button>
+
+                            
+                        </div>
+                      
+                 </form>
+                        
+                           {% endif%}
+
+                        {% if a %}
+                         <p class="text-success"> {{ "" }} </p>
+
+                         
+                         {% endif %}
+
+           
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+{% endblock body %}

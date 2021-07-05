@@ -1,0 +1,97 @@
+{% extends 'basic.html' %} {% block body%} {% load static %}
+
+<br><br><br>
+<br><br><br> {% include 'navbar.html' %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Check your nearest Corpo</li>
+        </ol>
+    </nav>
+    <br>
+</div>
+
+<div class="container mb-4">
+    <h2 class="text-center text-info">
+        Nearest Municipal Corpoations.
+    </h2>
+</div>
+
+<div class="container my-3">
+    <p class="h6 text-primary">You can find a nearest municipal corporation by two ways:</p>
+    <ul>
+        <li>By Pin code</li>
+        <li>By current location</li>
+    </ul>
+</div>
+
+<div class="container my-5">
+    <!-- Pin Form -->
+    <form method="POST" action="{% url 'nearestcorporation' %}">
+        {% csrf_token %}
+        <div class="form-group " style="opacity: 50%;">
+            Search via pincode.
+        </div>
+        <div class="form-group ml-5">
+            <input type="text" class="form-control-input" name="cname" style="width: 75%;">
+            <label class="label-control" for="pcity">Enter your city</label>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group ml-5">
+            <input type="text" class="form-control-input" name="cpin" maxlength="6" value="" style="width: 75%;">
+            <label class="label-control" for="pcode">Enter your pincode</label>
+            <div class="help-block with-errors"></div>
+        </div>
+
+        <!-- <div class="form-group checkbox">
+            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree with Mr.Corpo stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+            <div class="help-block with-errors"></div>
+        </div> -->
+        <div class="form-group justify-content-center mx-5 text-center">
+            <button type="submit" class="form-control-submit-button" style="width: 50%;"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+        </div>
+        <div class="form-message">
+            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+        </div>
+    </form>
+    <!-- end of pin form -->
+
+</div>
+<br>
+
+<div class="form-group ml-5" style="opacity: 70%;">
+    Search via map.
+</div>
+
+<div class="container ">
+    <p class="text-center">
+        You can also find your nearest corpo via google map.
+    </p>
+
+</div>
+
+<div class="text-center">
+
+    <div class="map-responsive">
+        <iframe id="map" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ceg%20campus,%20anna%20university,%20chennai+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowfullscreen height="400"
+            width="600"></iframe>
+        <script>
+            let map;
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: {
+                        lat: -34.397,
+                        lng: 150.644
+                    },
+                    zoom: 8,
+                });
+            }
+        </script>
+
+    </div>
+
+</div>
+
+{% include 'footer.html' %} {% endblock body %}

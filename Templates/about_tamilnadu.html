@@ -1,0 +1,81 @@
+{% extends 'basic.html' %}
+{% block body%}
+{% load static %}
+{% include 'navbar.html' %}
+<!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1><span class="turquoise">Tamil Nadu</span> </h1>
+                            <p class="text-justify">Tamil Nadu, a South Indian state, is famed for its Dravidian-style Hindu temples. In Madurai, Meenakshi Amman Temple has high ‘gopuram’ towers ornamented with colourful figures. On Pamban Island, Ramanathaswamy Temple is a pilgrimage site. The town of Kanyakumari, at India’s southernmost tip, is the site of ritual sunrises. Capital Chennai is known for beaches and landmarks including 1644 colonial Fort St. George.</p>
+                            <p class="font-weight-bold">Population <span class="font-weight-normal"> 6.79 crores(2012)</span> </p>
+                            <p class="font-weight-bold">Capital <span class="font-weight-normal"> Chennai </span> </p>
+                             <p class="font-weight-bold">Honorable Governor <span class="font-weight-normal">Thiru Banwarilal Purohit</span> </p>
+                           
+                            <p class="font-weight-bold">Honorable Chief Minister <span class="font-weight-normal">Thiru Edappadi K. Palaniswami (God of Arrear students, King of All-Pass)</span> </p>
+                            <p class="font-weight-bold">Points of interest <span class="font-weight-normal"> Meenakshi Amman Temple, Marina Beach, etc..,</span> </p>
+                            <p class="font-weight-bold">Districts <span class="text-justify font-weight-normal ml-2">38 Nos. (
+                                Ariyalur, 
+Chengalpattu, 
+Chennai, 
+Coimbatore, 
+Cuddalore, 
+Dharmapuri, 
+Dindigul, 
+Erode, 
+Kallakurichi, 
+Kanchipuram, 
+Kanyakumari, 
+Karur, 
+Krishnagiri, 
+Madurai, 
+Nagapattinam, 
+Namakkal, 
+Nilgiris, 
+Perambalur, 
+Pudukkottai, 
+Ramanathapuram, 
+Ranipet Salem, 
+Sivaganga, 
+Tenkasi, 
+Thanjavur, 
+Theni, 
+Thoothukudi (Tuticorin), 
+Tiruchirappalli, 
+Tirunelveli, 
+Tirupathur, 
+Tiruppur, 
+Tiruvallur, 
+Tiruvannamalai, 
+Tiruvarur, 
+Vellore, 
+Viluppuram, 
+Virudhunagar)</span> </p>
+<div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static "images/tamilnadu.png" %}" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+{% include 'footer.html' %}
+{% endblock body %}

@@ -1,0 +1,97 @@
+{% extends 'basic.html' %} {% block body%} {% load static %}
+<br><br><br><br><br><br>
+{% include 'navbar.html' %}
+{% load static %}
+
+      <div class = "container">
+             <div class="">
+            <h5 class="text-info border border-info">
+           
+          <i class="fa fa-flask" aria-hidden="true"></i>        Schemes :
+            </h5>
+        </div>
+        </div>
+         <div>
+           <br><br>
+<div class="container border border-info">
+  
+        <div class="container" id = "Scrollspy" data-offset = "30">
+          {% if a %}
+            <ul class="nav-stacked">
+              {% for i in a %}
+                <li>
+                <a href="{% url 'gscheme' i.id %}">{{ i.gschemeheading }}</a>
+                </li>
+              {% endfor %}
+          
+            </ul>
+          {% else %}
+          <p> No Government schemes until..</p>
+          {% endif %}
+        </div>
+    </div>
+</div>
+<br><br>
+ <div class="container">
+            <h5 class="text-info border  border-info">
+          <i class="fa fa-bullhorn" aria-hidden="true"></i>      Announcements :
+            </h5>
+        </div>
+<br><br>
+<div class="container border border-info">
+ 
+       
+        <div class="container" id="Scrollspy">
+           {% if b %}
+            <ul class="nav-stacked">
+              {% for i in b %}
+                <li>
+                <a href="{% url 'gann' i.id %}">{{ i.gannheading }}</a>
+                </li>
+              {% endfor %}
+          
+            </ul>
+          {% else %}
+          <p> No Announcements from the governemnt until..</p>
+          {% endif %}
+    
+        </div>
+
+</div>
+            
+            {% comment %} <div id = "section1" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 1</h1>
+               <p>Cotent for section #1</p>
+            </div>
+            
+            <div id = "section2" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 2</h1>
+               <p>Cotent for section #2</p>
+            </div>
+            
+            <div id = "section3" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 3</h1>
+               <p>Cotent for section #3</p>
+            </div>
+            
+            <div id = "section41" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 4 Submenu 1</h1>
+               <p>Cotent for section #4.1</p>
+            </div>
+            
+            <div id = "section42" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 4 Submenu 2</h1>
+               <p>Cotent for section #4.2</p>
+            </div>
+            
+         </div>
+          {% endcomment %}
+      </div>
+
+{% include 'footer.html' %}
+{% endblock body %}

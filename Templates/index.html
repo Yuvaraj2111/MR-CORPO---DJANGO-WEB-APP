@@ -1,0 +1,430 @@
+{% extends 'basic.html' %} {% load static %} {% block body%} {% include 'navbar.html' %}
+<!-- Header -->
+<header id="header" class="header">
+    <div class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1><span class="turquoise">Of the People,</span> </h1>
+                        <h3>by the people,</h3>
+                        <h1 class="turquoise">for the people.</h1>
+                        <a class="btn-solid-lg page-scroll" href="#services">SERVICES</a>
+                    </div>
+                    <!-- end of text-container -->
+                </div>
+                <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/header-teamwork.svg' %}" alt="alternative">
+                    </div>
+                    <!-- end of image-container -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of header-content -->
+</header>
+<!-- end of header -->
+<!-- end of header -->
+
+
+<!-- Customers -->
+<!-- <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>Trusted By</h5>-->
+
+<!-- Image Slider 
+                  <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-1.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-2.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-3.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-4.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-6.png" alt="alternative">
+                                    </div>
+                                </div>
+                            </div>
+                            l̥ end of swiper-wrapper -->
+</div>
+<!-- end of swiper container -->
+</div>
+<!-- end of slider-container -->
+<!-- end of image slider -->
+
+</div>
+<!-- end of col -->
+</div>
+<!-- end of row -->
+</div>
+<!-- end of container -->
+</div>
+<!-- end of slider-1 -->
+<!-- end of customers -->
+
+
+<!-- Services -->
+<div id="services" class="cards-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Complient Services</h2>
+                <p class="p-heading p-large">Registration is free of cost. Just fill your details and register Your complients. </p>
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card -->
+                <div class="card">
+
+                    <img class="card-image" src="{% static 'images/services-icon-1.svg' %}" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Check Nearest Corporation</h4>
+                        <p> If you need Corporation location and Details near your Area here. </p>
+                        <a class="btn-solid-reg " href="{% url 'nearestcorporation' %}">Click here</a>
+                    </div>
+
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-image" src="{% static 'images/services-icon-2.svg'%}" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Register <br>Your Compliants</h4>
+                        <p>Your complient and complient detail Register here.</p>
+                        <a class="btn-solid-reg  " href="{% url 'yourcompliants' %}">Click here</a>
+                    </div>
+
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-image" src="{% static 'images/services-icon-3.svg'%}" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Viewing Goverment Schemes</h4>
+                        <p>Detail about the Goverment Schemes here.</p>
+                        <a class="btn-solid-reg " href="{% url 'govermentschemes'%}">Click here</a>
+                    </div>
+
+                </div>
+                <!-- end of card -->
+
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+</div>
+<!-- end of cards-1 -->
+<!-- end of services -->
+
+
+<!-- Details 1 -->
+<div class="basic-1" id="request">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>Job Opportunity in Government </h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="text-primary fas fa-check"></i>
+                            <div class=" ml-2 media-body">Job Opportunities in Government Departments
+                            </div>
+                        </li>
+
+                    </ul>
+                    <a class="btn-solid-reg " href="{% url 'govermentjob' %}">Click here</a>
+                </div>
+                <!-- end of text-container -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="{% static 'images/details-1-office-worker.svg' %}" alt="alternative">
+                </div>
+                <!-- end of image-container -->
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+</div>
+<!-- end of basic-1 -->
+<!-- end of details 1 -->
+
+
+<!-- Details 2 -->
+<div class="basic-2" id="tamilnadu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="{% static 'images/details-2-office-team-work.svg' %}" alt="alternative">
+                </div>
+                <!-- end of image-container -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2> About TamilNadu</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body">History And Geography</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body">Administrative units of state</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body">Agriculture, Industry and Minerals</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg" href="{% url 'abouttamilnadu' %}">Click here</a>
+                </div>
+                <!-- end of text-container -->
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+</div>
+<!-- end of basic-2 -->
+<!-- end of details 2 -->
+
+<!-- Details Lightboxes -->
+<!-- Details Lightbox 1 -->
+<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="{% static 'images/details-lightbox-1.svg'%}" alt="alternative">
+                </div>
+                <!-- end of image-container -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Design And Plan</h3>
+                <hr>
+                <h5>Core feature</h5>
+                <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
+                <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">List building framework</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Easy database browsing</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">User administration</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Automate user signup</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Quick formatting tools</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Fast email checking</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+</div>
+<!-- end of lightbox-basic -->
+<!-- end of details lightbox 1 -->
+
+<!-- Details Lightbox 2 -->
+<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="container">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="{% static 'images/details-lightbox-2.svg'%}" alt="alternative">
+                </div>
+                <!-- end of image-container -->
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Search To Optimize</h3>
+                <hr>
+                <h5>Core feature</h5>
+                <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
+                <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">List building framework</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Easy database browsing</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">User administration</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Automate user signup</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Quick formatting tools</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Fast email checking</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+</div>
+<!-- end of lightbox-basic -->
+<!-- end of details lightbox 2 -->
+<!-- end of details lightboxes -->
+
+
+
+
+
+<!-- Contact -->
+<div id="contact" class="form-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact Information</h2>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="address">Don't hesitate to give us a call or send us a contact form message</li>
+                    <li><i class="fas fa-map-marker-alt"></i>CEG campus, Anna university, Guidy. </li>
+                    <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+98 5312 1212</a></li>
+                    <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:office@evolo.com">mrcorpo@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="map-responsive">
+                    <iframe id="map" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=ceg%20campus,%20anna%20university,%20chennai+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowfullscreen></iframe>
+                    <script>
+                        let map;
+
+                        function initMap() {
+                            map = new google.maps.Map(document.getElementById("map"), {
+                                center: {
+                                    lat: -34.397,
+                                    lng: 150.644
+                                },
+                                zoom: 8,
+                            });
+                        }
+                    </script>
+
+                </div>
+            </div>
+            <!-- end of col -->
+            <div class="col-lg-6">
+
+                <!-- Contact Form -->
+                <form action="{% url 'feedback' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        Feed back Form. <br>{{fbmsg}}
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" name="cname" required>
+                        <label class="label-control" for="cname">Name</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" name="cemail" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Your message</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms">I have read and agree with Mr.Corpo stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control-submit-button" value="Submit button">
+                    </div>
+
+                </form>
+                <!-- end of contact form -->
+
+            </div>
+            <!-- end of col -->
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of container -->
+</div>
+<!-- end of form-2 -->
+<!-- end of contact -->
+{% include 'footer.html' %} {% endblock body %}

@@ -1,0 +1,41 @@
+{% extends 'basic.html' %} {% block body%} {% load static %}{% include 'navbar.html' %} <br><br><br><br><br>
+<div class="container border border-info">
+    <div class="container p-5 text-center">
+        <h4>Result for your search</h4>
+    </div>
+    {% if result %}
+    <div class="container">
+        <p class="">
+            <span class="font-weight-bolder">Corporation Name : </span> {{result.name}} Corporation Office
+        </p>
+
+    </div>
+
+    <div class="container">
+        <p>
+            <span class="font-weight-bolder">Address :</span> {{result.address}}
+
+        </p>
+    </div>
+
+    <div class="container">
+        <p> <span class="font-weight-bolder">Phone number :
+            </span> {% if result.phone_no %} {{result.phone_no}} {% else %} 044-25043490 {% endif %}
+        </p>
+    </div>
+
+    <div style="width: 100%">
+        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ result.iframe|safe }}">
+        
+        </iframe> Draw Map Circle
+
+    </div>
+
+    <br> {% else %}
+    <div class="container">
+        <p>Invalid data...</p>
+
+    </div>
+    {% endif %}
+</div>
+<br>{% include 'footer.html' %} {% endblock body %}

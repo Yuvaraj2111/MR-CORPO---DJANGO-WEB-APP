@@ -1,0 +1,77 @@
+{% extends 'basic.html' %}
+{% block body %}
+{% load static %}
+
+
+    <!-- Contact -->
+    <div id="contact" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Upload Details</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li><i class="fas fa-map-marker-alt"></i>Chennai corporation , central , chennai: </li>
+                        <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+98 5312 1212</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:office@evolo.com">tngov@gmail.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                       <!-- Contact Form -->
+                       
+                    <form id="" action="{% url 'sample' %}" method="POST" >
+                    {% csrf_token %}
+                     <div class="form-group">
+                         <div class="row">
+                            <div class="cols">
+                                <a name="" id="" class="btn btn-primary" href="#" role="button">Add</a>
+                                <a name="" id="" class="btn btn-danger" href="{% url 'gedit' %}" role="button">Edit</a>
+                                <a name="" id="" class="btn btn-warning" href="{% url 'compliantdetails' %}" role="button">Complaint details</a>
+                            </div>
+                         </div>
+                        </div>
+                        <div class="input-group mb-3">
+                                
+                                <select class="custom-select" name="type" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Scheme</option>
+                                    <option value="2">Annoucement</option>
+                                    <option value="3">job update</option>
+
+                                </select>
+                                </div>
+
+                           
+                        <div class="form-group">
+                            <input type="text"  name="heading" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">title</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" name="paragraph" id="cmessage" required></textarea>
+                            <label class="label-control"  for="cmessage">Your message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        {% if msg %}
+                         <p class="text-success"> {{msg}} </p>
+                         {% endif %}
+                        <div class="row" class="text-right">
+                             <button type="reset" class="btn btn-warning col-lg-3 pull-right">RESET MESSAGE</button>
+           
+                         <button type="submit" class="btn btn-info col-lg-3 pull-right">SUBMIT MESSAGE</button>
+
+                            
+                        </div>
+                      
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+           
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+{% endblock body %}
